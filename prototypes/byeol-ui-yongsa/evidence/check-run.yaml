@@ -1,0 +1,133 @@
+# The one-shot's small check (check-run/1).
+# Written by one-shot-check.sh --record: the results are /prototype's reading of
+# evidence/self-check.tsv; never edited by hand.
+kind: check-run/1
+engine: web
+browser: "HeadlessChrome/158.0.0.0"
+time: "2026-11-24 07:05:59"
+checks:
+  - id: boots
+    result: pass
+    evidence:
+      - "evidence/self-check.tsv"
+  - id: shot
+    result: pass
+    evidence:
+      - "evidence/play.png"
+  - id: outlines
+    result: pass
+    evidence:
+      - "evidence/figures.png"
+  - id: brief-words
+    result: pass
+    evidence:
+      - "evidence/brief-words.tsv"
+  - id: emoji
+    result: pass
+    evidence:
+      - "evidence/self-check.tsv"
+  - id: nearest-game
+    result: pass
+    evidence:
+      - "evidence/nearest-game.txt"
+brief_checklist:
+  - id: L1
+    result: pass
+    evidence: "evidence/play.png"
+    item: "Look: 깊은 남보라 우주 배경 위 네온 벡터. 속성 색 — 고체 호박/주황, 유체 청록/하늘, 천체 보라/금. 동료는 행성을 머리·몸으로 한 작은 캐릭터(토성은 고리 모자, 혜성은 꼬리 망토). 처치 시 별빛 파티클과 떠오르는 숫자. every figure drawn, no emoji, no plain circles. *(provisional)*"
+  - id: L2
+    result: pass
+    evidence: "evidence/play.png"
+    item: "References: none"
+  - id: L3
+    result: pass
+    evidence: "evidence/play.png"
+    item: "View: 2D · Camera: static — 위쪽 전투 무대, 아래쪽 강화·동료 패널. *(provisional)*"
+  - id: F1
+    result: pass
+    evidence: "index.html:530"
+    item: "자동 전투 + 스테이지 진행, 4 enemy kinds, each attacking differently (돌진형·방패형·분열형·원거리형), 10스테이지마다 보스"
+  - id: F2
+    result: pass
+    evidence: "index.html:1005"
+    item: "용사 강화 3종 — 살 때마다 오르는 가격, 버튼에 가격과 증가량 표시"
+  - id: F3
+    result: pass
+    evidence: "index.html:139"
+    item: "전직 트리: 고체(수정 기사→다이아몬드 성기사 / 운석 투사→소행성 파괴자), 유체(조류 검사→해일 검성 / 안개 마도사→성운 대마도사), 천체(별빛 궁수→은하 사수 / 중력 술사→블랙홀 군주) *(inferred (strong): 1차당 2차 1개)*"
+  - id: F4
+    result: pass
+    evidence: "evidence/figures.png"
+    item: "의인화 천체 동료 8명 — 고체: 루나(달)·마르스(화성)·머큐리(수성) / 유체: 넵튠(해왕성)·주피(목성)·새턴(토성) / 천체: 솔(태양)·코멧(혜성) *(guessed)*"
+  - id: F5
+    result: pass
+    evidence: "index.html:394"
+    item: "동료 획득: 보스 처치 합류 + 별가루 소환"
+  - id: F6
+    result: pass
+    evidence: "index.html:228"
+    item: "동료 효과: 자동 공격, 같은 속성 시너지, 중복 획득 시 별 승급"
+  - id: F7
+    result: pass
+    evidence: "index.html:289"
+    item: "오프라인 보상(돌아오면 방치 시간·획득량 표시) + 자동 저장"
+  - id: F8
+    result: pass
+    evidence: "index.html:241"
+    item: "큰 숫자 단위 표기(천·만·억), 부드럽게 오르는 숫자"
+  - id: S1
+    result: pass
+    evidence: "index.html:411"
+    item: "속성 선택과 1·2차 전직 · in the slice"
+  - id: S2
+    result: pass
+    evidence: "index.html:546"
+    item: "강화·성장 · in the slice"
+  - id: S3
+    result: pass
+    evidence: "index.html:394"
+    item: "천체 동료 수집 · in the slice"
+  - id: M1
+    result: pass
+    evidence: "evidence/play.png"
+    item: "기본 용사가 첫 별 몬스터를 저절로 때려잡고 별가루가 오른다."
+  - id: M2
+    result: not_run
+    mark: not assessed
+    why: "affordable buttons glow; the ~10 s timing needs a play"
+    evidence: "index.html:981"
+    item: "약 10초 뒤 \"공격력 강화\" 버튼에 불이 들어오고, 누르면 데미지 숫자가 눈에 띄게 커진다."
+  - id: M3
+    result: not_run
+    mark: not assessed
+    why: "stage 5 boss grants Luna who then fights; the ~30 s timing needs a play (with 6 kills a stage it is nearer 45-60 s)"
+    evidence: "index.html:165"
+    item: "약 30초에 스테이지 5 미니보스 \"떠돌이 소행성\"을 잡으면 첫 동료 루나(달)가 합류해 화면에 나타나 같이 공격하고 초당 데미지가 뛴다."
+  - id: M4
+    result: not_run
+    mark: not assessed
+    why: "the summon button pulses when affordable; the 1-minute timing needs a play"
+    evidence: "index.html:1052"
+    item: "1분쯤 별가루가 소환 1회 비용에 닿아 소환 버튼이 반짝인다."
+  - id: C1
+    result: not_run
+    mark: not assessed
+    why: "30 s boss timer and retreat built; whether it lands at 3-5 min needs a play"
+    evidence: "index.html:513"
+    item: "3~5분쯤 스테이지 10 첫 보스 \"적색거성\": 30초 안에 못 잡으면 이전 웨이브로 밀려난다(잃는 것 없음, 사냥하며 강화)."
+  - id: C2
+    result: pass
+    evidence: "index.html:411"
+    item: "레벨 10에 1차 전직(속성 선택)이 열려 보스를 넘는 열쇠가 된다."
+  - id: C3
+    result: not_run
+    mark: not assessed
+    why: "2nd job at Lv 30 and Big Bang at stage 50 built; whether stage 30 needs it needs a play"
+    evidence: "index.html:197"
+    item: "스테이지 30 보스쯤엔 2차 전직이 필요하고, 스테이지 50에 최종 보스 빅뱅 *(provisional)*."
+measures:
+  - id: step-time
+    value: 1.700
+    unit: ms
+    by: browser
+    detail: "mean 0.015 ms, slowest 1.700 ms, 1070 steps"

@@ -1,0 +1,21 @@
+L1	pass	evidence/play.png	deep indigo space, neon vector figures, element colours amber/cyan/violet, Saturn ring hat and Comet tail cape in figures.png, star-burst particles and floating numbers
+L2	pass	evidence/play.png	no references named; nothing copied
+L3	pass	evidence/play.png	2D static view: battle stage on top, upgrade and companion panel below
+F1	pass	index.html:530	auto battle and stage climb; charger stuns on impact, shield absorbs, slime splits, pulsar shoots from range; boss every 5/10 stages (index.html:197), all four kinds in figures.png
+F2	pass	index.html:1005	three upgrades with rising cost, price and effect on each button (play.png)
+F3	pass	index.html:139	12 jobs, each 1st job with one 2nd job and its own special, chosen in a modal at the job levels (index.html:411)
+F4	pass	evidence/figures.png	all 8 personified companions drawn with names and planets
+F5	pass	index.html:394	bosses grant their companion (BOSSES index.html:165) and summon spends stardust (index.html:1052)
+F6	pass	index.html:228	companions shoot on their own, same-element synergy, duplicates raise stars
+F7	pass	index.html:289	autosave every 5s; on return the away time and stardust earned are shown
+F8	pass	index.html:241	만/억/조/경 units and the stardust counter eases up
+S1	pass	index.html:411	element and job choice at Lv 10, 2nd job at Lv 30
+S2	pass	index.html:546	upgrades, hero levels and milestone x2 every 10 attack levels
+S3	pass	index.html:394	collection grid with party toggling (index.html:569)
+M1	pass	evidence/play.png	the hero hits the first meteors on his own and stardust rises
+M2	not_assessed	index.html:981	affordable buttons glow; the ~10 s timing needs a play
+M3	not_assessed	index.html:165	stage 5 boss grants Luna who then fights; the ~30 s timing needs a play (with 6 kills a stage it is nearer 45-60 s)
+M4	not_assessed	index.html:1052	the summon button pulses when affordable; the 1-minute timing needs a play
+C1	not_assessed	index.html:513	30 s boss timer and retreat built; whether it lands at 3-5 min needs a play
+C2	pass	index.html:411	1st job opens at Lv 10 and doubles damage
+C3	not_assessed	index.html:197	2nd job at Lv 30 and Big Bang at stage 50 built; whether stage 30 needs it needs a play
